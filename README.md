@@ -15,30 +15,34 @@ This project implements a rules engine to calculate eligibility and amounts for 
 ## Setup
 
 1. Clone the repository:
-   git clone git@github.com:DamirFM/Winter-supplement-engine.git
+
+- https://github.com/DamirFM/Winter-supplement-engine.git
 
 2. Install dependencies:
-   cd winter-supplement-engine
-   npm install
+
+- cd winter-supplement-engine
+- npm install
 
 3. Run the engine:
-   npm start
+
+- npm start
 
 4. Rules engine must work with an existing Winter Supplement Calculator designed
    using an event-driven architecture and be sure to note
    the MQTT topic ID each time you access the calculator, as this ID is essential for
    integrating the rule engine with the web application. https://winter-supplement-app-d690e5-tools.apps.silver.devops.gov.bc.ca
 
-   Edit the topicID variable in src/mqttConnection.js:
-   const topicID = "<your-dynamic-topic-id>";
+- Edit the topicID variable in src/mqttConnection.js:
+  const topicID = "<your-dynamic-topic-id>";
 
-   If Winter Supplement Calculator if does not response to test engine - run publishTestMessage.js simultaneously with mqttConnection.js:
-   cd winter-supplement-engine
-   node publishTestMessage.js
-   node mqttConnection.js
+- If Winter Supplement Calculator if does not response to test engine - run publishTestMessage.js simultaneously with mqttConnection.js:
+  cd winter-supplement-engine
+- node publishTestMessage.js
+- node mqttConnection.js
 
 5. To run unit tests:
-   npm test
+
+- npm test
 
 ### Asclinema for workflow
 
