@@ -35,8 +35,11 @@ This project implements a rules engine to calculate eligibility and amounts for 
 - Edit the topicID variable in src/mqttConnection.js:
   const topicID = "<your-dynamic-topic-id>";
 
-- If Winter Supplement Calculator if does not response to test engine - run publishTestMessage.js simultaneously with mqttConnection.js:
-  cd winter-supplement-engine
+### Notice
+
+If Winter Supplement Calculator if does not response to test engine - run publishTestMessage.js simultaneously with mqttConnection.js:
+cd winter-supplement-engine
+
 - node publishTestMessage.js
 - node mqttConnection.js
 
