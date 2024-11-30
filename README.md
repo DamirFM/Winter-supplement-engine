@@ -38,8 +38,8 @@ This project implements a rules engine to calculate eligibility and amounts for 
 ### Notice
 
 If Winter Supplement Calculator if does not response to test engine - run publishTestMessage.js simultaneously with mqttConnection.js:
-cd winter-supplement-engine
 
+- cd winter-supplement-engine
 - node publishTestMessage.js
 - node mqttConnection.js
 
