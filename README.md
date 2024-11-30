@@ -1,11 +1,8 @@
 # Winter-supplement-engine
 
-# Description:
+## Description:
 
-<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
-<img src="https://img.shields.io/badge/Jest-000000?style=for-the-badge&logo=jest&logoColor=white" />
-<img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white" />
-<img src="https://img.shields.io/badge/License-MIT-000000?style=for-the-badge&logo=opensource&logoColor=white" />
+<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" /><img src="https://img.shields.io/badge/Jest-000000?style=for-the-badge&logo=jest&logoColor=white" /><img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white" /><img src="https://img.shields.io/badge/License-MIT-000000?style=for-the-badge&logo=opensource&logoColor=white" />
 
 This project implements a rules engine to calculate eligibility and amounts for the Winter Supplement. It uses an MQTT broker for event-driven communication.
 
