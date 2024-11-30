@@ -5,8 +5,27 @@ function engine(input) {
     familyComposition,
     familyUnitInPayForDecember,
   } = input;
+  // Datatypes check
+  if (
+    typeof familyUnitInPayForDecember !== "boolean" ||
+    typeof numberOfChildren !== "number" ||
+    typeof familyComposition !== "string" ||
+    id == null // To ensure id is provided (null or undefined check)
+  ) {
+    return {
+      id,
+      isEligible: false,
+      baseAmount: 0.0,
+      childrenAmount: 0.0,
+      supplementAmount: 0.0,
+    };
+  }
   // Eligibility check
-  if (!familyUnitInPayForDecember) {
+  if (
+    !familyUnitInPayForDecember ||
+    numberOfChildren < 0 ||
+    (familyComposition !== "single" && familyComposition !== "couple")
+  ) {
     return {
       id,
       isEligible: false,
